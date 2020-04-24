@@ -31,8 +31,10 @@ public class TelaLoginCsi extends javax.swing.JFrame {
             // se existir senha usuário e senha correspondente
             if (rs.next()) {
                 // a linha abaixo obtem os dados do campo perfil da tabela administrador
-                TelaPrincipal principal = new TelaPrincipal();
+                TelaPrincipalCsi principal = new TelaPrincipalCsi();
                 principal.setVisible(true);
+                this.dispose();
+                conexao.close();
                 
             } else {
                 JOptionPane.showMessageDialog(null, "Usuário ou Senha Invalido");
