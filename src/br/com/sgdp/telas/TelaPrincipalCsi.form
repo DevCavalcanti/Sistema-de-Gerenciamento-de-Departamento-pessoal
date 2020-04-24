@@ -17,10 +17,13 @@
                 <Property name="text" type="java.lang.String" value="Funcion&#xe1;rio"/>
               </Properties>
               <SubComponents>
-                <MenuItem class="javax.swing.JMenuItem" name="jMenuItem4">
+                <MenuItem class="javax.swing.JMenuItem" name="menuFuncCadastro">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Cadastro"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuFuncCadastroActionPerformed"/>
+                  </Events>
                 </MenuItem>
                 <MenuItem class="javax.swing.JMenuItem" name="jMenuItem5">
                   <Properties>
@@ -38,6 +41,9 @@
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Cadastro"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem6ActionPerformed"/>
+                  </Events>
                 </MenuItem>
                 <MenuItem class="javax.swing.JMenuItem" name="jMenuItem7">
                   <Properties>

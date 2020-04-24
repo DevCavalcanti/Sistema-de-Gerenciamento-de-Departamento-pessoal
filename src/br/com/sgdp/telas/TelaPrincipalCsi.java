@@ -46,7 +46,7 @@ public class TelaPrincipalCsi extends javax.swing.JFrame {
         jMenuBar2 = new javax.swing.JMenuBar();
         jMenu3 = new javax.swing.JMenu();
         jMenu1 = new javax.swing.JMenu();
-        jMenuItem4 = new javax.swing.JMenuItem();
+        menuFuncCadastro = new javax.swing.JMenuItem();
         jMenuItem5 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem6 = new javax.swing.JMenuItem();
@@ -143,8 +143,13 @@ public class TelaPrincipalCsi extends javax.swing.JFrame {
 
         jMenu1.setText("Funcionário");
 
-        jMenuItem4.setText("Cadastro");
-        jMenu1.add(jMenuItem4);
+        menuFuncCadastro.setText("Cadastro");
+        menuFuncCadastro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuFuncCadastroActionPerformed(evt);
+            }
+        });
+        jMenu1.add(menuFuncCadastro);
 
         jMenuItem5.setText("jMenuItem5");
         jMenu1.add(jMenuItem5);
@@ -154,6 +159,11 @@ public class TelaPrincipalCsi extends javax.swing.JFrame {
         jMenu2.setText("Empresa");
 
         jMenuItem6.setText("Cadastro");
+        jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem6ActionPerformed(evt);
+            }
+        });
         jMenu2.add(jMenuItem6);
 
         jMenuItem7.setText("Filiais");
@@ -241,6 +251,20 @@ public class TelaPrincipalCsi extends javax.swing.JFrame {
             System.exit(0);
     }//GEN-LAST:event_btnSairSistemaActionPerformed
 
+    private void menuFuncCadastroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuFuncCadastroActionPerformed
+        // TODO add your handling code here:
+        TelaFuncionario cadastro = new TelaFuncionario();
+        cadastro.setVisible(true);
+        desktopCsi.add(cadastro);
+    }//GEN-LAST:event_menuFuncCadastroActionPerformed
+
+    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
+        // TODO add your handling code here:
+         TelaCadastroEmpresa cadastroemp = new TelaCadastroEmpresa();
+         cadastroemp.setVisible(true);
+         desktopCsi.add(cadastroemp);
+    }//GEN-LAST:event_jMenuItem6ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -294,7 +318,6 @@ public class TelaPrincipalCsi extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JMenuItem jMenuItem7;
@@ -305,5 +328,6 @@ public class TelaPrincipalCsi extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JLabel lblData;
     private javax.swing.JLabel lblUsuario;
+    private javax.swing.JMenuItem menuFuncCadastro;
     // End of variables declaration//GEN-END:variables
 }
