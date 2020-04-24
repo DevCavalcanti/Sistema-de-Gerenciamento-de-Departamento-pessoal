@@ -48,6 +48,9 @@ public class TelaPrincipalCsi extends javax.swing.JFrame {
         jMenu1 = new javax.swing.JMenu();
         menuFuncCadastro = new javax.swing.JMenuItem();
         jMenuItem5 = new javax.swing.JMenuItem();
+        jMenuItem4 = new javax.swing.JMenuItem();
+        jMenuItem10 = new javax.swing.JMenuItem();
+        jMenuItem11 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem6 = new javax.swing.JMenuItem();
         jMenuItem7 = new javax.swing.JMenuItem();
@@ -55,11 +58,16 @@ public class TelaPrincipalCsi extends javax.swing.JFrame {
         jMenuItem9 = new javax.swing.JMenuItem();
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
-        jMenuItem3 = new javax.swing.JMenuItem();
+        jMenu9 = new javax.swing.JMenu();
+        jMenuItem12 = new javax.swing.JMenuItem();
+        jMenuItem13 = new javax.swing.JMenuItem();
+        jMenuItem14 = new javax.swing.JMenuItem();
+        jMenuItem15 = new javax.swing.JMenuItem();
+        jMenuItem16 = new javax.swing.JMenuItem();
         jMenu5 = new javax.swing.JMenu();
         jMenu4 = new javax.swing.JMenu();
-        jMenu6 = new javax.swing.JMenu();
         jMenu7 = new javax.swing.JMenu();
+        jMenuItem3 = new javax.swing.JMenuItem();
         jMenu8 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -151,8 +159,17 @@ public class TelaPrincipalCsi extends javax.swing.JFrame {
         });
         jMenu1.add(menuFuncCadastro);
 
-        jMenuItem5.setText("jMenuItem5");
+        jMenuItem5.setText("Cargos");
         jMenu1.add(jMenuItem5);
+
+        jMenuItem4.setText("Funções");
+        jMenu1.add(jMenuItem4);
+
+        jMenuItem10.setText("Jornada de Trabalho");
+        jMenu1.add(jMenuItem10);
+
+        jMenuItem11.setText("Horários");
+        jMenu1.add(jMenuItem11);
 
         jMenu3.add(jMenu1);
 
@@ -183,8 +200,24 @@ public class TelaPrincipalCsi extends javax.swing.JFrame {
         jMenuItem2.setText("Transporte");
         jMenu3.add(jMenuItem2);
 
-        jMenuItem3.setText("Plano de Saúde");
-        jMenu3.add(jMenuItem3);
+        jMenu9.setText("Benefícios");
+
+        jMenuItem12.setText("Vale Transporte");
+        jMenu9.add(jMenuItem12);
+
+        jMenuItem13.setText("Vale Alimentação");
+        jMenu9.add(jMenuItem13);
+
+        jMenuItem14.setText("Vale Refeição");
+        jMenu9.add(jMenuItem14);
+
+        jMenuItem15.setText("Assistência Médica");
+        jMenu9.add(jMenuItem15);
+
+        jMenuItem16.setText("Assistência Odontológica");
+        jMenu9.add(jMenuItem16);
+
+        jMenu3.add(jMenu9);
 
         jMenu5.setText("Eventos");
         jMenu5.setEnabled(false);
@@ -196,12 +229,17 @@ public class TelaPrincipalCsi extends javax.swing.JFrame {
         jMenu4.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jMenuBar2.add(jMenu4);
 
-        jMenu6.setText("Sobre");
-        jMenu6.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jMenuBar2.add(jMenu6);
-
         jMenu7.setText("Ajuda");
         jMenu7.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+
+        jMenuItem3.setText("Sobre");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
+        jMenu7.add(jMenuItem3);
+
         jMenuBar2.add(jMenu7);
 
         jMenu8.setText("Folha");
@@ -265,6 +303,13 @@ public class TelaPrincipalCsi extends javax.swing.JFrame {
          desktopCsi.add(cadastroemp);
     }//GEN-LAST:event_jMenuItem6ActionPerformed
 
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        // TODO add your handling code here:
+        TelaSobre sobre = new TelaSobre();
+        sobre.setVisible(true);
+        
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -311,13 +356,21 @@ public class TelaPrincipalCsi extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     public static javax.swing.JMenu jMenu5;
-    private javax.swing.JMenu jMenu6;
     private javax.swing.JMenu jMenu7;
     private javax.swing.JMenu jMenu8;
+    private javax.swing.JMenu jMenu9;
     private javax.swing.JMenuBar jMenuBar2;
     private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem10;
+    private javax.swing.JMenuItem jMenuItem11;
+    private javax.swing.JMenuItem jMenuItem12;
+    private javax.swing.JMenuItem jMenuItem13;
+    private javax.swing.JMenuItem jMenuItem14;
+    private javax.swing.JMenuItem jMenuItem15;
+    private javax.swing.JMenuItem jMenuItem16;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JMenuItem jMenuItem7;
